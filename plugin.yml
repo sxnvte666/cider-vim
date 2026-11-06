@@ -1,0 +1,10 @@
+ce_prefix: cider-vim
+identifier: com.sx.cidervim
+name: Cider Vim
+description: Vim-style keyboard navigation and playback control. Press ? for the cheat sheet.
+version: "0.1.0"
+author: sx
+pluginKitVersion: "4"
+entry:
+  plugin.js:
+    type: main
