@@ -35,7 +35,7 @@ Stop reaching for the mouse. With cider-vim installed, Cider has a **NORMAL mode
 Cider 2 loads plugins from `plugins/<identifier>/` inside its user data directory. On Linux that is:
 
 ```sh
-git clone https://github.com/<you>/cider-vim
+git clone https://github.com/sxnvte666/cider-vim
 cd cider-vim
 D=~/.config/sh.cider.genten/plugins/com.sx.cidervim
 mkdir -p "$D" && cp plugin.js plugin.yml "$D"
