@@ -16,7 +16,7 @@
 j/k scroll    f link hints    :vol 40    gg/G top/bottom    p play/pause    ? help
 ```
 
-Stop reaching for the mouse. With cider-vim installed, Cider has a **NORMAL mode** whenever you aren't typing in a text field, and a small HUD in the corner tells you where you are (`NORMAL`, `-- INSERT --`, `HINT as`).
+Stop reaching for the mouse. With cider-vim installed, Cider has a **NORMAL mode** whenever you aren't typing in a text field, and a small glass HUD in the corner flashes the mode (`NORMAL`, `INSERT`, `HINT`) when it changes, then fades away on its own.
 
 ## Features
 
@@ -27,6 +27,7 @@ Stop reaching for the mouse. With cider-vim installed, Cider has a **NORMAL mode
 - **`:` command line**: `:vol 40`, `:seek 1:30`, `:go songs`, `:search daft punk`.
 - **Page navigation**: `g` chords jump to library pages; `H` / `L` go back and forward; `gt` / `gT` switch tabs.
 - **Stays out of the way**: modifier combos and keys it doesn't know fall through to Cider, so Space, `/` search and type-ahead keep working. Typing in a field is always left alone.
+- Polished UI: translucent HUD, glowing row selection, amber hint labels, a centered command bar and a keycap cheat sheet (`?`).
 - Zero dependencies, one file.
 
 ## Install
@@ -88,7 +89,7 @@ Restart Cider. On other platforms, copy the same two files into the `plugins` fo
 | `:search <text>` | Search |
 | `:play` `:pause` `:next` `:prev` `:shuffle` `:repeat` | Playback |
 
-Bad input shows a message in the HUD (for example `usage: vol 0-100`) until your next keypress.
+Volume changes go through the same state as Cider's volume slider, so the slider moves with `:vol` and `+` / `-`. Bad input shows a message in the HUD (for example `usage: vol 0-100`), which fades after a few seconds.
 
 ## How it works
 

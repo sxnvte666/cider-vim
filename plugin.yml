@@ -2,7 +2,7 @@ ce_prefix: cider-vim
 identifier: com.sx.cidervim
 name: Cider Vim
 description: Vim-style keyboard navigation and playback control. Press ? for the cheat sheet.
-version: "0.1.0"
+version: "0.2.0"
 author: sx
 pluginKitVersion: "4"
 entry:
